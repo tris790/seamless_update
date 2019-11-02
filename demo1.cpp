@@ -8,11 +8,10 @@ int CalculateSomeThing(int *ptr)
 
 int main(int argc, const char *argv[])
 {
-
     HANDLE handle = OpenFileMapping(
         FILE_MAP_ALL_ACCESS,
         FALSE,
-        TEXT("SEAMLESS\\MAIN"));
+        TEXT("SEAMLESS__MAIN"));
     int *view = (int *)(MapViewOfFile(
         handle,
         FILE_MAP_ALL_ACCESS,
